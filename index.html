@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GigFloww - Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-header">
+                <h1>Join <span class="highlight">GigFloww</span></h1>
+                <p>Connect with clients and showcase your skills</p>
+            </div>
+            
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name">
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="skill">Skill Category</label>
+                    <select id="skill" name="skill">
+                        <option value="" disabled selected>Select your primary skill</option>
+                        <option value="design">Design</option>
+                        <option value="development">Development</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="writing">Content Writing</option>
+                        <option value="video">Video Production</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <span class="error-message" id="skill-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="portfolio">Portfolio Link</label>
+                    <input type="url" id="portfolio" name="portfolio" placeholder="https://yourportfolio.com">
+                    <span class="error-message" id="portfolio-error"></span>
+                </div>
+                
+               
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+                </div>
+                
+                <div class="form-footer">
+                    <p>Already have an account? <a href="#">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
